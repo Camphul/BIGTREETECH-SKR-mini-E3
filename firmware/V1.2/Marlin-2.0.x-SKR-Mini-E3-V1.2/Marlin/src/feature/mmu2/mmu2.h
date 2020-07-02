@@ -28,12 +28,15 @@
 #endif
 
 #if SERIAL_USB
-  #define MMU_RX_SIZE 256
-  #define MMU_TX_SIZE 256
+  #define MMU_RX_SIZE  1024
+  #define MMU_TX_SIZE  1024
 #else
-  #define MMU_RX_SIZE  16
-  #define MMU_TX_SIZE  16
+  #define MMU_RX_SIZE  1024
+  #define MMU_TX_SIZE  1024
 #endif
+
+#define MMU_RX_SIZE  1024
+#define MMU_TX_SIZE  1024
 
 struct E_Step;
 
